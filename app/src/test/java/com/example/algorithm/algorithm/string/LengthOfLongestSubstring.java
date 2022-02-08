@@ -12,19 +12,11 @@ import java.util.Set;
 class LengthOfLongestSubstring {
 
     public static void main(String[] args) {
-        System.out.println(lengthOfLongestSubstring("pwwkew"));
+        System.out.println(lengthOfLongestSubstring("au"));
     }
 
     public static int lengthOfLongestSubstring(String s) {
         int max = 0;
-        Set<Character> characters = new HashSet<>();
-        for (int i = 0; i < s.length(); i++) {
-            characters.add(s.charAt(i));
-        }
-        if (characters.size() == s.length()) {
-            return characters.size();
-        }
-
         for (int i = 0; i < s.length(); i++) {
             if (i == s.length() - 1) {
                 return Math.max(1, max);

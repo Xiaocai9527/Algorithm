@@ -54,6 +54,7 @@ public class AnagramString {
                 return false;
             } else {
                 word2 = word2.substring(0, index) + word2.substring(index + 1);
+                System.out.println("word2:" + word2);
             }
         }
         return word2.isEmpty();
